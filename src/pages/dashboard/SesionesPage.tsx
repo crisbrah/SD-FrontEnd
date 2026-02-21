@@ -35,7 +35,7 @@ export default function SesionesPage() {
   const [closeTarget, setCloseTarget] = useState<SesionCulto | null>(null)
   const [closing, setClosing] = useState(false)
   const [deleteTarget, setDeleteTarget] = useState<SesionCulto | null>(null)
-//  const [deleting, setDeleting] = useState(false)
+
 
   const load = useCallback(async () => {
     setLoading(true)
@@ -90,22 +90,7 @@ export default function SesionesPage() {
       setClosing(false)
     }
   }
-/*
-  const handleEliminar = async () => {
-    if (!deleteTarget) return
-    setDeleting(true)
-    try {
-      await sesionCultoService.eliminar(deleteTarget.id)
-      toast.success('Sesión eliminada')
-      setDeleteTarget(null)
-      load()
-    } catch (err) {
-      toast.error(getErrorMessage(err))
-    } finally {
-      setDeleting(false)
-    }
-  }
-  */
+
 
   const columns: Column<SesionCulto>[] = [
     {
