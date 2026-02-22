@@ -41,7 +41,7 @@ export default function BackendBanner() {
       <div className="fixed top-0 left-0 right-0 z-[200] bg-red-600 text-white text-sm py-2.5 px-4 flex items-center gap-3 shadow-lg">
         <WifiOff className="w-4 h-4 shrink-0" />
         <span className="flex-1">
-          <strong>Backend no disponible.</strong> El servidor en <code className="bg-red-700 px-1 rounded text-xs">localhost:8080</code> no responde.
+          <strong>Backend no disponible.</strong> El servidor en <code className="bg-red-700 px-1 rounded text-xs">https://sd-backend-s7yo.onrender.com</code> no responde.
           Inicia el backend con <code className="bg-red-700 px-1 rounded text-xs">mvn spring-boot:run</code> o Docker.
         </span>
         <button
